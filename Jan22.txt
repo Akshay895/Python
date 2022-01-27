@@ -1,0 +1,179 @@
+string1= '***python***'
+string1=' **python********'
+string= '********java*******'
+
+x=string1.lstrip('*')
+x1 = string1.rstrip('*')    task-2
+x2= string1.strip('*')
+
+print(x)
+print(x1)
+print(x2)
+
+
+string1 = "ravi 10.30"  
+string2 = "meghala 12.19"
+string3 = "Gokul 20.20"
+i=string1.split()
+print(i)
+j=string2.split()                            task-3
+print(j)
+k=string3.split()
+print(k)
+
+print(string1.index("10.30"))
+print(string2.index("12.19"))
+print(string3.index("20.20"))
+
+
+string1 = "python"
+string2 = "java"
+    
+x= string1.replace("python","jython")   task-4
+print(x)
+z= string2.replace("java","pava")   
+print(z)
+
+print(x+z+str(len(x))+str(len(z)))
+
+
+string1 = "maths"
+
+string2 = "science"
+    
+l= string1.replace("maths","saths")   
+print(x)
+f= string2.replace("science","mcience")   
+print(z)
+
+print(l+f+str(len(l))+str(len(f)))
+
+
+string1 =  "wikipedia"
+string2 = "typescript"
+
+x = len(string1)//2
+y= len(string2)//2    task-5
+
+print(string1[x])
+print(string2[y])
+
+
+print("hello world with python") task -7
+
+s="HackerRank.com presents Pythonist 2"  task - 8
+print(s.swapcase())
+
+ print("Hello " +first_name+" "+ last_name+"! You just delved into python.") task -9
+
+
+s = list(string)
+ s[position] = character
+ string ="".join(s)
+ return string
+
+
+def mutate_string2(string, position, character):                    task-10
+   return string[:position] + character + string[position + 1:]
+
+
+"Information_Technology"
+
+#[-2:0:-1] - golonhceT_noitamrofn
+#[5:-5:5] - mnh
+#[-5:5:-5] - oTt
+#[5:-5:-5] - empty
+#[3:9:-1] - empty
+#[9:-10:-2] - empty
+#[2:-4:-4] - empty
+#[-4:2:-2] - lncTniar
+#[0:-1:-3] -empty
+#[-3:3:6] - empty
+#[::-3] - ylhToaoI
+#[::-2] - yoohe_otmon
+#[2:-2:-2] -empty
+#[2:-2:2] - frainTcnl
+#[5:-5:5] - mnh
+#[3:-3:3] - oaoThl
+#[::2] - IfrainTcnlg
+#[::-5] - yn_an
+
+a="computer science"
+
+print(a[-10:10:3])
+print(a[-5:-1:1])
+print(a[-8:-2:10])
+print(a[5::3])
+print(a[:5:2])
+print(a[10:14:2])
+print(a[-10:-3:3])
+print(a[5:12:5])
+print(a[3:-3:3])
+print(a[-5:-3:20])
+
+o/p:
+
+es
+ienc
+ 
+t ic
+cmu
+ce
+ese
+tc
+pese
+i
+
+a="Information_technology"
+
+
+print(a[-10:10:3])
+print(a[-5:-1:1])
+print(a[-8:-2:10])
+print(a[5::3])
+print(a[:5:2])
+print(a[10:14:2])
+print(a[-10:-3:3])
+print(a[5:12:5])
+print(a[3:-3:3])
+print(a[-5:-3:20])
+
+o/p:
+
+olog
+c
+mi_cog
+Ifr
+nt
+thl
+mn
+oaothl
+o
+
+a="Google_chrome_browser"
+
+print(a[-10:10:3])
+print(a[-5:-1:1])
+print(a[-8:-2:10])
+print(a[5::3])
+print(a[:5:2])
+print(a[10:14:2])
+print(a[-10:-3:3])
+print(a[5:12:5])
+print(a[3:-3:3])
+print(a[-5:-3:20])
+
+o/p:
+
+owse
+_
+ehmbwr
+Gol
+oe
+mbw         task -1
+eo
+g_rer
+o
+
+
+
