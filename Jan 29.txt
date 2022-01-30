@@ -1,0 +1,134 @@
+#Task1
+
+#hackerrank Write a function
+ 
+year = int(input("Enter a year: "))         #divided by 100 means century year (ending with 00)
+# century year divided by 400 is leap year
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+elif (year % 4 ==0) and (year % 100 != 0):      #not divided by 100 means not a century year
+# year divided by 4 is a leap year
+    print("{0} is a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year)) # if not divided by both 400 (century year) and 4 (not century year)
+# year is not leap year
+
+o/p:
+
+Enter a year: 2005
+2005 is not a leap year
+
+#Task2
+
+#hackerrank Python If-Else
+
+n = int(input())
+if n % 2 == 1:
+    print("Weird")
+elif n % 2 == 0 and 2 <= n <= 5:
+    print("Not Weird")
+elif n % 2 == 0 and 6 <= n <= 20:
+    print("Weird")
+else:
+    print("Not Weird")
+
+o/p:
+Enter a number8
+Weird
+
+
+#Task3
+
+#Fizz buzz
+
+a = int(input("Enter the string:"))
+if(a%3==0):
+    print("Fizz")
+if(a%5==0):
+    print("Buzz")
+elif(a%3==0 & a%5==0):
+    print("FizzBuzz")
+else:
+    print("invalid number")
+
+o/p:
+Enter the string:60
+Fizz
+Buzz
+
+
+Task4:
+
+#Get one mark from student
+#mark 0 to 100 otherwise invalid mark
+
+mark = int(input("Enter the string:"))
+if(mark >= 90 and avgmark < 100):
+    print("A")
+elif(mark >= 80 and avgmark < 90): 
+    print("B")
+elif(mark >= 70 and avgmark < 80): 
+    print("C") 
+elif(mark >= 60 and avgmark < 70): 
+    print("D") 
+elif(mark >= 50 and avgmark < 60):
+    print("E")
+else:
+    print("invalid mark")
+    
+O/P:
+
+Enter the string:55
+E Grade Pass Mark
+
+Task5:
+
+
+
+#mark calculation
+
+#collect physics / checmistry / mathematics mark from user
+#all the marks should be between 0 -200 ==> 
+#calculate aggregate = phy/4  + chem/4  + maths / 2
+
+phy = int(input("Enter the Physics Marks:"))
+phy1 = int(input("Enter the Physics Marks:"))
+phy2 = int(input("Enter the Physics Marks:"))
+phy3 = int(input("Enter the Physics Marks:"))
+
+
+che = int(input("Enter the Chemistry Marks:"))
+che1 = int(input("Enter the Chemistry Marks:"))
+che2 = int(input("Enter the Chemistry Marks:"))
+che3 = int(input("Enter the Chemistry Marks:"))
+
+mat = int(input("Enter the Maths Marks:"))
+mat1 = int(input("Enter the Maths Marks:"))
+
+phyavg = phy+phy1+phy2+phy3
+cheavg = che+che1+che2+che3
+matavg=mat+mat1
+
+agg = phyavg/4+cheavg/4+matavg/2
+if(agg >= 190):
+    print("First Class")
+elif(agg>150):
+    print("Second Class")
+elif(agg>70): 
+    print("Third Class Pass Mark")
+else:
+    print("Fail")
+
+O/P:
+
+Enter the Physics Marks:100
+Enter the Physics Marks:200
+Enter the Physics Marks:50
+Enter the Physics Marks:90
+Enter the Chemistry Marks:200
+Enter the Chemistry Marks:100
+Enter the Chemistry Marks:52
+Enter the Chemistry Marks:30
+Enter the Maths Marks:180
+Enter the Maths Marks:90
+First Class
