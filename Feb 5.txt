@@ -1,0 +1,374 @@
+def a(str1,str2,str3):
+    return(str1+str2+str3)
+a('a','b','c')
+
+o/p:
+
+'abc'
+
+
+def mul(num1,num2,num3):
+ return(num1*num2*num3)
+
+mul(5,8,9)
+
+o/p:
+
+360
+
+
+def pal(s):
+    rev=s[::-1]
+    print("string : ",s)
+    print("reverse : ",rev)
+    if(s==rev):
+       return True
+    else:
+       return False
+
+x = input("Enter a string : ")
+if pal(x):
+   print("Palindrome")
+else:
+  print("not Palindrome")
+
+o/p:
+
+Enter a string : malayalam
+string :  malayalam
+reverse :  malayalam
+Palindrome
+
+
+name = input("Enter your name - ")
+ 
+def middle_charracters(name):
+   return name[(len(name)-1)//2]
+ 
+print(middle_charracters(name))
+
+o/p:
+
+Enter your name - abcd
+b
+
+
+name = input("Enter your name - ")
+ 
+def middle_charracters(name):
+   return name[(len(name)-1)//2]
+print(middle_charracters(name))
+ 
+if(middle_charracters(name) =='a' or middle_charracters(name) =='e' or middle_charracters(name) =='i' or middle_charracters(name) =='o' or middle_charracters(name) =='u' ):
+    print("Vowel")
+else:
+    print("not vowel")
+
+o/p:
+
+Enter your name - aedu
+e
+Vowel
+
+
+lower_value = int(input ("Please, Enter the Lowest Range Value: "))  
+upper_value = int(input ("Please, Enter the Upper Range Value: "))  
+  
+print ("The Prime Numbers in the range are: ")  
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
+        for i in range (2, number):  
+            if (number % i) == 0:  
+                break  
+        else:  
+            print (number)  
+
+o/p:
+
+Please, Enter the Lowest Range Value: 1
+Please, Enter the Upper Range Value: 10
+The Prime Numbers in the range are: 
+2
+3
+5
+7
+
+
+
+def getSum(number):
+ if number == 0:
+  return number
+ else:
+   return pow((number%10),order1) + getSum(number//10)
+# storing the input in number variable
+number = int(input("Please input any number: "))
+# len() and str() function is used to find the order
+order1 = len(str(number))
+# getSum() gives the sum and the sum variable is initialised
+sum = getSum(number)
+# the sum is equal to number or not is checked
+if sum == int(number):
+# Determining if the number is an Armstrong number
+   print(number," - an Armstrong Number.")
+else:
+# Determining if the number is not an Armstrong number
+
+print(number," - not an Armstrong Number.")
+
+o/p:
+
+Please input any number: 1634
+1634  - an Armstrong Number.
+
+
+def factorial(num):
+    return 1 if (num==1 or num==0) else num * factorial(num-1);
+number = 6
+print("The factorial of",number,"is",factorial(number))
+
+o/p:
+The factorial of 6 is 720
+
+
+
+def fibonacci(n):
+    a = 0
+    b = 1
+     
+    # Check is n is less
+    # than 0
+    if n < 0:
+        print("Incorrect input")
+         
+    # Check is n is equal
+    # to 0
+    elif n == 0:
+        return 0
+       
+    # Check if n is equal to 1
+    elif n == 1:
+        return b
+    else:
+        for i in range(1, n):
+            c = a + b
+            a = b
+            b = c
+        return b
+print(fibonacci(9))    
+
+o/p:
+
+34
+
+
+def print_factors(x):
+   print("The factors of",x,"are:")
+   for i in range(1, x + 1):
+       if x % i == 0:
+           print(i)
+
+num = 320
+
+print_factors(num)
+
+o/p:
+
+The factors of 320 are:
+1
+2
+4
+5
+8
+10
+16
+20
+32
+40
+64
+80
+160
+320
+​
+
+built in functions
+------------------------------------------------------
+
+x=abs(-6.10)
+print(x)
+
+o/p:
+6.1
+
+x=abs((6+3j))
+print(x)
+
+o/p:
+6.708203932499369
+
+x = bin(36)
+print(x)
+
+o/p:
+0b100100
+
+
+x = bool(1)
+print(x)
+
+o/p:
+True
+
+
+x = bytearray(4)
+print(x)
+
+o/p:
+bytearray(b'\x00\x00\x00\x00')
+
+
+def x():
+  a = 6
+
+print(callable(x))
+
+o/p:
+
+True
+
+
+x = chr(97)
+
+print(x)
+
+o/p:
+
+a
+
+x = compile('print(55)\nprint(88)', 'test', 'exec')
+exec(x)
+
+o/p:
+55
+88
+
+x = complex(3, 5)
+print(x)
+
+o/p:
+(3+5j)
+
+
+x = dict(name = "John", age = 36, country = "Norway")
+
+print(x)
+
+o/p:
+
+{'name': 'John', 'age': 36, 'country': 'Norway'}
+
+
+x = divmod(5, 2)
+
+print(x)
+
+o/p:
+
+(2, 1)
+
+
+x = ('apple', 'banana', 'cherry')
+y = enumerate(x)
+
+print(list(y))
+
+o/p:
+[(0, 'apple'), (1, 'banana'), (2, 'cherry')]
+
+
+x = 'print(55)' 
+eval(x)
+
+o/p:
+55
+
+
+
+x = 'name = "John"\nprint(name)'
+exec(x)
+
+o/p:
+
+John
+
+
+ages = [5, 12, 17, 18, 24, 32]
+
+def myFunc(x):
+  if x < 18:
+    return False
+  else:
+    return True
+
+adults = filter(myFunc, ages)
+
+for x in adults:
+  print(x)
+
+o/p:
+18
+24
+32
+
+
+x = format(0.5, '%')
+
+print(x)
+
+o/p:
+50.000000%
+
+
+class Person:
+  name = "John"
+  age = 36
+  country = "Norway"
+
+x = getattr(Person, 'age')
+
+print(x)
+
+o/p:
+
+36
+
+
+x = ('apple', 'banana', 'cherry')
+y = id(x)
+
+o/p:
+
+2644021817736
+
+x = iter(["apple", "banana", "cherry"])
+print(next(x))
+print(next(x))
+print(next(x)) 
+
+o/p:
+apple
+banana
+cherry
+
+
+x = list(('apple', 'banana', 'cherry')) 
+print(x)
+
+o/p:
+['apple', 'banana', 'cherry']
+
+
+x = ord("h")
+print(x)
+
+o/p:
+104
