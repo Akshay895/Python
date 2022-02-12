@@ -1,0 +1,47 @@
+import random
+
+point_user = 0
+point_comp=0
+
+
+user_input=input(" Enter your choice : ")
+possible_choices=["Rock","Paper","Scissors"]
+comp_choices=random.choice(possible_choices)
+
+print(f" User choice is {user_input} , Comp choice is {comp_choices}.")
+
+if user_input == comp_choices:
+    print(f"Both players selected {user_input}. It's a Draw!")
+    
+elif user_input == "Rock":
+    if comp_choices == "Scissors":
+        print("Rock breaks scissors! You win!")
+        point_user+=1
+    else:
+        print("Paper covers rock! You lose.")
+        point_comp+=1
+elif user_input == "Paper":
+    if comp_choices == "Rock":
+        print("Paper covers rock! You win!")
+        point_user+=1
+    else:
+        print("Scissors cuts paper! You lose.")
+        point_comp+=1
+elif user_input == "Scissors":
+    if comp_choices == "Paper":
+        print("Scissors cuts paper! You win!")
+        point_user+=1
+    else:
+        print("Rock smashes scissors! You lose.")
+        point_comp+=1
+        
+print(f"Total Points are : User Points : {point_user} Computer points : {point_comp}")
+
+o/p:
+
+Enter your choice : Scissors
+ User choice is Scissors , Comp choice is Scissors.
+Both players selected Scissors. It's a Draw!
+Total Points are : User Points : 0 Computer points : 0
+
+
